@@ -1,6 +1,7 @@
 const breaks = {
     Autumn : 1698667200,
     Christmas : 1703246400,
+    NewYear : 1704063600,
     Sport : 1708948800,
     Easter : 1711969200,
     Summer : 1718362800,
@@ -21,8 +22,8 @@ function getCurrentTimestamp() {
 // Seconds = 129_600
 function formatTime(seconds) {
     var days = Math.floor(seconds / (60 * 60 * 24));
-    var hours = Math.floor((seconds % (60 * 60 * 24)) / (60 * 60));
-    var minutes = Math.floor((seconds % (60 * 60)) / (60));
+    var hours = Math.floor((seconds / (60 * 60)) % 24);
+    var minutes = Math.floor((seconds / 60) % 60);
     var seconds = Math.floor(seconds % 60);
 
     return {
