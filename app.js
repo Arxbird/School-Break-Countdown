@@ -2,8 +2,8 @@ const breaks = {
     Autumn : 1698667200,
     Christmas : 1703246400,
     NewYear : 1704063600,
-    Sport : 1708948800,
-    Easter : 1711969200,
+    Sport : 1708698600,
+    Easter : 1711722600,
     Summer : 1718362800,
 }
 
